@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <script src="assets/js/include.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This is a brief bio about who I am and what I do.</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some examples of my work.</p>
-    </section>
-    <footer id="contact">
-        <h2>Contact</h2>
-        <p>Email: ericvanness0@gmail.com</p>
-    </footer>
+    <!-- Include Header -->
+    <div data-include="components/header.html"></div>
+        </header>
+        <section id="about">
+            <h1>Hey, I'm Eric</h1>
+                <p>
+                    I'm Eric Van Ness, and I am originally from Peachtree Corners, Georgia.
+                    Currently, I am studying Computer Science and Economics at Georgia Tech, and will be graduating this May.
+                    This Summer, I plan to travel Europe, compete in triathlons, and retrain myself to wake up at a time that doesn't make brunch feel like breakfast.
+                    Come Fall, I'll be moving to Chicago to join IMC Trading as a Quantitative Trader.
+                </p>
+                <p>
+                    This website currently (hopefully) showcases a bit of my professional experience, though I hope to expand it when I have time to include more of my interests.
+                    I enjoy using tech as a tool to automate, build, and flash my creativity.
+                </p>
+                <p>
+                    Feel free to take a look around!
+                </p>
+        </section>
+    <!-- Include Footer -->
+    <div data-include="components/footer.html"></div>
 </body>
 </html>
