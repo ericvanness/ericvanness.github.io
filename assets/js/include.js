@@ -1,26 +1,20 @@
 function includeHTML() {
     const includes = document.querySelectorAll('[data-include]');
     includes.forEach(el => {
-      const file = el.getAttribute('data-include');
-      if (file) {
-        fetch(file)
-          .then(response => {
-            if (response.ok) {
-              return response.text();
-            }
-            throw new Error('Error loading ' + file);
-          })
-          .then(data => {
-            el.innerHTML = data;
-          })
-          .catch(err => {
-            console.error(err);
-            el.innerHTML = '<p>Error loading component: ' + file + '</p>';
-          });
-      }
+        const file = el.getAttribute('data-include');
+        if (file) {
+            fetch(file)
+                .then(response => response.ok ? response.text() : Promise.reject(response))
+                .then(data => {
+                    el.innerHTML = data;
+
+                })
+                .catch(err => {
+                    console.error(`Error loading ${file}:`, err);
+                });
+        }
     });
   }
+
   
-  // Call the function after the DOM is fully loaded
-  document.addEventListener('DOMContentLoaded', includeHTML);
-  
+document.addEventListener('DOMContentLoaded', includeHTML);

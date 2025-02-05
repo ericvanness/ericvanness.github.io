@@ -1,0 +1,83 @@
+header {
+    background-color: #000000; /* Dark background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+header nav a {
+    margin: 0 1rem;
+}
+  
+/* Header Container */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+/* Left side: Name */
+.header-left {
+    color: #f4f4f4;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+/* Left-Side Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f4f4f4;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.logo:hover {
+    color: #dddddd; /* Lighten on hover */
+}
+
+.header-right {
+    color: #f4f4f4;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem; /* Space between links */
+    margin: 0;
+}
+  
+/* Navigation Link Styling */
+.nav-link {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-bottom: 5px; /* Space for underline */
+    position: relative;
+}
+  
+/* Underline Effect on Hover */
+.nav-link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #f4f4f4;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease; 
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
