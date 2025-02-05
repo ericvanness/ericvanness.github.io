@@ -7,21 +7,65 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
     <script src="assets/js/include.js" defer></script>
     <script src="assets/js/header.js" defer></script>
 </head>
 <body>
+    <!-- Include Header -->
     <div data-include="components/header.html"></div>
+  
 
+    <!-- Main Content -->
     <main>
-        <section class="about">
-        <h1>About Me</h1>
-        <p>
-            This section is going to be blank until I decide on something that portrays me as useful and/or interesting. Big things coming. Stay tuned.
-        </p>
+        <section class="portfolio-section">
+        <h1>Portfolio</h1>
+
+        <div class="portfolio-entry">
+            <div class="portfolio-header">
+                <img src="assets/images/portfolio/vc2.jpg" class="project-logo">
+                <div class="portfolio-info">
+                    <h3 class="project-name">VC2</h3>
+                    <p class="role-name">Quantitative Researcher</p>
+                </div>
+            </div>
+            <div class="portfolio-details">
+                <p class="technologies"><strong>Technologies Used:</strong> Bloomberg Terminal, Excel, Python (NumPy/Pandas)</p>
+                <p class="description">
+                    I created and backtested a VC2-based trading algorithm, which currently manages $25k in assets.
+                    The VC2 is a relative valuation strategy that routinely purchases top securities in the S&P 500 based on weighing fundamental ratios.
+                    I instrumented a 10-year backtest demonstrating a 21.36% annualized return on investment and 1.31 Sharpe, along with a volatility of 16.33%.
+                    I also engineered a Monte Carlo simulation to predict a future return distribution of the strategy versus the S&P500TR, which achieved outperformance of 64.4%.
+                    This was the first algorithmic strategy given an allocation in the GTSF Investment Committee's history. <br>
+
+                    To see the presentation of the strategy, click <a href="https://drive.google.com/file/d/1TYFxX0y4fnqV_NJQaWBlBdwwaXMHGbQX/view">here</a>.
+                </p>
+            </div>
+        </div>
+        
+        <div class="portfolio-entry">
+            <div class="portfolio-header">
+                <img src="assets/images/portfolio/FratGPT.png" class="project-logo">
+                <div class="portfolio-info">
+                    <h3 class="project-name">FratGPT</h3>
+                    <p class="role-name">Full-Stack Developer</p>
+                </div>
+            </div>
+            <div class="portfolio-details">
+                <p class="technologies"><strong>Technologies Used:</strong> Python (OpenAI, Streamlit)</p>
+                <p class="description">
+                    This project is referenced on my resume as an "LLM Event Planning Web Application".
+                    It basically cooks up super cheesy emoji-filled event invite messages using the ChatGPT-3.5 API.
+                    There is a simple interface that allows the user to enter their API key and curate some of the invite details.
+                    The GitHub is private, but I'll potentially add more juicy details to this here at a later time.
+                </p>
+            </div>
+        </div>
+
         </section>
     </main>
 
+    <!-- Include Footer -->
     <div data-include="components/footer.html"></div>
 </body>
 </html>

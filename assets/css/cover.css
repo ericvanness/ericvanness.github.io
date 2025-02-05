@@ -1,0 +1,79 @@
+/* Cover Page Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    font-family: Arial, sans-serif;
+}
+
+.cover-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Top Section */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 33%; /* Top third of the page */
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: #1a1a1a; /* Dark background */
+    color: white;
+}
+
+.intro-text {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.headshot {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headshot img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Circular headshot */
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+/* Bottom Section */
+.bottom-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2x2 matrix */
+    grid-template-rows: 1fr 1fr;
+    height: 67%; /* Bottom two-thirds of the page */
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin: 0;
+    text-align: center;
+}
+
+.info-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
