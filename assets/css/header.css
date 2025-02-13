@@ -4,12 +4,13 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
+    flex-shrink: 0;
 }
 
 header nav a {
     margin: 0 1rem;
 }
-  
+
 /* Header Container */
 .header-content {
     display: flex;

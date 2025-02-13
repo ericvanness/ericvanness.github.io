@@ -1,0 +1,51 @@
+/* Gallery Wrapper - Defines Size */
+.gallery-wrapper {
+    width: 100vw; /* Full width */
+    height: 10vh; /* 10% of the viewport height */
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+/* Shared Gallery Styles */
+.gallery, .gallery-reverse {
+    display: flex;
+    gap: 100px;
+    white-space: nowrap;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Normal vs. Reverse Animation */
+.gallery {
+    animation-name: slideshow;
+}
+
+.gallery-reverse {
+    animation-name: slideshow;
+    animation-direction: reverse; /* This reverses the animation */
+}
+
+/* Icons in Gallery */
+.gallery img, .gallery-reverse img {
+    height: 8vh; /* Scale to fit the gallery */
+    width: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.gallery img:hover, .gallery-reverse img:hover {
+    transform: scale(1.1); /* Slight zoom */
+}
+
+/* Keyframe Animation for Smooth Auto-Scrolling */
+@keyframes slideshow {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

@@ -9,47 +9,84 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/cover.css">
+    <link rel="stylesheet" href="assets/css/card.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
     <script src="assets/js/include.js" defer></script>
     <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/flip.js" defer></script>
+    <script src="assets/js/gallery.js" defer></script>
+
 </head>
 <body>
     <div class="cover-page">
         <div data-include="components/header.html"></div>
         <!-- Top Section -->
         <div class="top-section">
-            <div class="intro-text">
-                <h1>Eric Van Ness</h1>
-            </div>
+            <div class="intro-card" onclick="flipCard()">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h1>Eric Van Ness</h1>
+                        <p class="flip-hint">[Click for Bio]</p>
+                    </div>
+                    <div class="card-back">
+                        <p>
+                            I'm Eric Van Ness, and I'm originally from Peachtree Corners, Georgia.
+                            Currently, I'm studying Computer Science at Georgia Tech, with a focus on Artificial Intelligence, Machine Learning, and Computational Modeling & Simulation.
+                            I'm involved in several clubs on campus, including GTSF Investments Committee, Student Government Association, and Greek Life.
+                            I will be graduating this May with a degree in Computer Science and a minor in Economics.
+                            This Summer, I plan to travel Europe, compete in triathlons, and retrain myself to wake up at a time that doesn't make brunch feel like breakfast.
+                            Come Fall, I'll be moving to Chicago to join IMC Trading as a Quantitative Trader.
+                        </p>
+                    </div>
+                </div>
+            </div>            
             <div class="headshot">
                 <img src="assets/images/headshot.jpg" alt="Eric Van Ness Headshot">
             </div>
         </div>
-        <!-- <div style="width: 200px; height: 100px; background-image: url('assets/images/texture.svg'); background-repeat: repeat;"></div> -->
-        
-        <!-- Bottom Section -->
-        <div class="bottom-section">
-            <div class="info-box">
-                <h2>Bio</h2>
-                <p>
-                    I'm Eric Van Ness, and I'm originally from Peachtree Corners, Georgia.
-                    Currently, I'm studying Computer Science and Economics at Georgia Tech, and will be graduating this May.
-                    This Summer, I plan to travel Europe, compete in triathlons, and retrain myself to wake up at a time that doesn't make brunch feel like breakfast.
-                    Come Fall, I'll be moving to Chicago to join IMC Trading as a Quantitative Trader.
-                </p>
-            </div>
-            <div class="info-box">
-                <h2>Interests</h2>
-                <p>Marathons, Triathlons, Skiing, Design, Psychology, Coding</p>
-            </div>
-            <div class="info-box">
-                <h2>Skills</h2>
-                <p>Python, SQL, React, Bloomberg, etc. Gonna make this a logo bubble when I have time.</p>
-            </div>
-            <div class="info-box">
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto:ericvanness0@gmail.com">ericvanness0@gmail.com</a>. Will replace this with short contact box</p>
+
+        <!-- Skills Slideshow -->
+        <h2>Skills</h2>
+        <div class="gallery-wrapper">
+            <div class="gallery-reverse">
+                <img src="assets/images/skills/cpp.svg" alt="cpp">
+                <img src="assets/images/skills/css.svg" alt="css">
+                <img src="assets/images/skills/git.svg" alt="git">
+                <img src="assets/images/skills/html.svg" alt="html">
+                <img src="assets/images/skills/java.svg" alt="java">
+                <img src="assets/images/skills/javascript.svg" alt="javascript">
+                <img src="assets/images/skills/mysql.svg" alt="mysql">
+                <img src="assets/images/skills/numpy.svg" alt="numpy">
+                <img src="assets/images/skills/openai.svg" alt="openai">
+                <img src="assets/images/skills/pandas.svg" alt="pandas">
+                <img src="assets/images/skills/plotly.svg" alt="plotly">
+                <img src="assets/images/skills/python.svg" alt="python">
+                <img src="assets/images/skills/react.svg" alt="react">
+                <img src="assets/images/skills/scikit-learn.svg" alt="scikit-learn">
             </div>
         </div>
+
+        <!-- Interests/Hobbies Slideshow -->
+        <h2>Interests</h2>
+        <div class="gallery-wrapper">
+            <div class="gallery">
+                <img src="assets/images/skills/cpp.svg" alt="cpp">
+                <img src="assets/images/skills/css.svg" alt="css">
+                <img src="assets/images/skills/git.svg" alt="git">
+                <img src="assets/images/skills/html.svg" alt="html">
+                <img src="assets/images/skills/java.svg" alt="java">
+                <img src="assets/images/skills/javascript.svg" alt="javascript">
+                <img src="assets/images/skills/mysql.svg" alt="mysql">
+                <img src="assets/images/skills/numpy.svg" alt="numpy">
+                <img src="assets/images/skills/openai.svg" alt="openai">
+                <img src="assets/images/skills/pandas.svg" alt="pandas">
+                <img src="assets/images/skills/plotly.svg" alt="plotly">
+                <img src="assets/images/skills/python.svg" alt="python">
+                <img src="assets/images/skills/react.svg" alt="react">
+                <img src="assets/images/skills/scikit-learn.svg" alt="scikit-learn">
+            </div>
+        </div>
+        
         <div data-include="components/footer.html"></div>
     </div>
 
