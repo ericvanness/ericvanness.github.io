@@ -1,12 +1,11 @@
-.portfolio-section {
+.panel-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 0;
 }
 
 
-.portfolio-entry {
+.panel-entry {
     width: 80%;
     max-width: 800px;
     background: #f8f8f8;
@@ -18,49 +17,55 @@
     flex-direction: column;
 }
 
-.portfolio-header {
+.panel-header {
     display: flex;
     align-items: top;
     gap: 25px;
     line-height: 0%;
 }
 
-.project-logo {
+.panel-img {
     width: 150px;
     height: 150px;
     object-fit: contain;
 }
 
-/* portfolio info (Project Name, Role) */
-.portfolio-info {
+/* EXPERIENCE INFO (Company Name, Role) */
+.panel-info {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-.project-name {
-    font-size: 2rem;
-    font-weight: bold;
+.panel-title {
     color: #333;
 }
 
-.role-name {
-    font-size: 1.5rem;
+.panel-subtitle {
     font-weight: 500;
     color: #666;
 }
 
-/* portfolio DETAILS */
-.portfolio-details {
+.panel-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.panel-metatext {
+    font-size: 1rem;
+    color: #999;
+}
+
+.panel-details {
     margin-top: 10px;
 }
 
-.technologies {
-    font-weight: bold;
+.panel-technologies {
     color: #444;
 }
 
-.description {
+.panel-description {
     font-size: 1rem;
     color: #555;
     line-height: 1.5;

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../assets/css/globals.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <script src="../assets/js/cf-success.js" defer></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <div data-include="../components/header.html"></div>
+
+    <main class="contact-container">
+        <h1>Contact Me</h1>
+        <p>Send me a message and I'll get back to you as soon as I can.</p>
+
+        <form id="contact-form">
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <!-- Cloudflare Turnstile Widget -->
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAA9aYqVeMexABFXG" data-callback="turnstileSuccess"></div>
+
+            <button id="submit-btn" type="submit" disabled>Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <div data-include="../components/footer.html"></div>
+
+    <script src="../assets/js/include.js"></script>
+</body>
+</html>

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="/" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/globals.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="assets/css/panel.css">
     <script src="assets/js/include.js" defer></script>
     <script src="assets/js/header.js" defer></script>
 </head>
@@ -18,20 +19,20 @@
 
     <!-- Main Content -->
     <main>
-        <section class="portfolio-section">
+        <section class="panel-section">
         <h1>Portfolio</h1>
 
-        <div class="portfolio-entry">
-            <div class="portfolio-header">
-                <img src="assets/images/portfolio/vc2.jpg" class="project-logo">
-                <div class="portfolio-info">
-                    <h3 class="project-name">VC2</h3>
-                    <p class="role-name">Quantitative Researcher</p>
+        <div class="panel-entry">
+            <div class="panel-header">
+                <img src="assets/images/portfolio/vc2.jpg" class="panel-img">
+                <div class="panel-info">
+                    <h2 class="panel-title">VC2</h2>
+                    <h3 class="panel-subtitle">Quantitative Researcher</h3>
                 </div>
             </div>
-            <div class="portfolio-details">
-                <p class="technologies"><strong>Technologies Used:</strong> Bloomberg Terminal, Excel, Python (NumPy/Pandas)</p>
-                <p class="description">
+            <div class="panel-details">
+                <p class="panel-technologies"><strong>Technologies Used:</strong> Bloomberg Terminal, Excel, Python (NumPy/Pandas)</p>
+                <p class="panel-description">
                     I created and backtested a VC2-based trading algorithm, which currently manages $25k in assets.
                     The VC2 is a relative valuation strategy that routinely purchases top securities in the S&P 500 based on weighing fundamental ratios.
                     I instrumented a 10-year backtest demonstrating a 21.36% annualized return on investment and 1.31 Sharpe, along with a volatility of 16.33%.
@@ -43,17 +44,17 @@
             </div>
         </div>
         
-        <div class="portfolio-entry">
-            <div class="portfolio-header">
-                <img src="assets/images/portfolio/fratgpt.png" class="project-logo">
-                <div class="portfolio-info">
-                    <h3 class="project-name">FratGPT</h3>
-                    <p class="role-name">Full-Stack Developer</p>
+        <div class="panel-entry">
+            <div class="panel-header">
+                <img src="assets/images/portfolio/fratgpt.png" class="panel-img">
+                <div class="panel-info">
+                    <h2 class="panel-title">FratGPT</h2>
+                    <h3 class="panel-subtitle">Full-Stack Developer</h3>
                 </div>
             </div>
-            <div class="portfolio-details">
-                <p class="technologies"><strong>Technologies Used:</strong> Python (OpenAI, Streamlit)</p>
-                <p class="description">
+            <div class="panel-details">
+                <p class="panel-technologies"><strong>Technologies Used:</strong> Python (OpenAI, Streamlit)</p>
+                <p class="panel-description">
                     This project is referenced on my resume as an "LLM Event Planning Web Application".
                     It basically cooks up super cheesy emoji-filled event invite messages using the ChatGPT-3.5 API.
                     There is a simple interface that allows the user to enter their API key and curate some of the invite details.

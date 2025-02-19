@@ -13,7 +13,7 @@
     display: flex;
     gap: 100px;
     white-space: nowrap;
-    animation-duration: 30s;
+    animation-duration: 50s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -33,7 +33,7 @@
     height: 8vh; /* Scale to fit the gallery */
     width: auto; /* Maintain aspect ratio */
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-}
+} /* TODO: Make the cards flip hella on click */
 
 /* Hover Effect */
 .gallery img:hover, .gallery-reverse img:hover {
